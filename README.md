@@ -95,7 +95,7 @@ useradd -m -g users -G wheel NAME
 passwd NAME
 
 [Installing additional packages]
-pacman -S base-devel dosfstools grub efibootmgr gnome gnome-tweaks lvm2 mtools nano networkmanager openssh os-prober sudo iwd
+pacman -S base-devel dosfstools grub efibootmgr gnome gnome-tweaks lvm2 mtools nano networkmanager openssh os-prober sudo
 systemctl enable sshd
  
 [Install Linux kernel]
