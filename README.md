@@ -27,13 +27,13 @@ p
 n
 ENTER
 ENTER
-+1G
++2G
 Y
 
 n
 ENTER
 ENTER
-+1G
++3G
 
 n
 ENTER
@@ -61,7 +61,7 @@ cryptsetup open --type luks /dev/nvme0n1p3 lvm
 pvcreate /dev/mapper/lvm
 vgcreate volgroup0 /dev/mapper/lvm
 lvcreate -L 30GB volgroup0 -n lv_root
-lvcreate -L 250GB volgroup0 -n lv_home
+lvcreate -L 500GB volgroup0 -n lv_home
 vgdisplay
 lvdisplay
 
@@ -95,7 +95,7 @@ useradd -m -g users -G wheel NAME
 passwd NAME
 
 [Installing additional packages]
-pacman -S base-devel dosfstools grub efibootmgr gnome gnome-tweaks lvm2 mtools nano networkmanager openssh os-prober sudo
+pacman -S base-devel dosfstools grub efibootmgr hyprland sddm lvm2 mtools nano networkmanager openssh os-prober sudo
 systemctl enable sshd
  
 [Install Linux kernel]
