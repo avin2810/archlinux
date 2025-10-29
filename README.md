@@ -1,4 +1,4 @@
-# archlinux
+# archlinux manual install
 
 [Install Wi-Fi]
 ip addr show
